@@ -61,7 +61,7 @@ def artifact_dir() -> str:
 
 def artifact_basename(mode: str) -> str:
     # Single underscore separator (no double __)
-    return f"{_safe_slug(node_name())}_frame_{mode}"
+    return f"{_safe_slug(node_name())}_{mode}"
 
 
 def repository_url() -> str | None:

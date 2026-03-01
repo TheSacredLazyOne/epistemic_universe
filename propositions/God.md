@@ -1,5 +1,7 @@
 # God
 
+The name used here is a high-collision term by design. If it impedes reading, rename the file. If the definition doesn't fit your node's constraints, revise it. The structure — a shared termination point enabling coordination — is what matters. The name and definition are both local implementations.
+
 In this system, "God" refers to a stabilized shared constraint surface emerging from recursive negotiation between heterogeneous nodes.
 
 God is:

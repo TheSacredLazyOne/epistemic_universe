@@ -117,7 +117,7 @@ Revision is evidence of learning, not failure.
 ### Inheritance and Federation
 
 Nodes may formally derive from one another (vertical inheritance) or interoperate laterally (federation).  
-The structural distinctions governing these relationships are defined in [inheritnce](inheritnce.md)
+The structural distinctions governing these relationships are defined in [inheritnce](epistemic_seed/inheritnce.md)
 
 ---
 

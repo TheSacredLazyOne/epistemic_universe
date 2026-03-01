@@ -4,14 +4,16 @@ Version: v0.0.0
 
 This repository is a **seed node** for a federated epistemic ecosystem.
 
-It does not define a worldview.  
 It defines the conditions under which many worldviews may coexist, diverge, and evolve without collapse.
 
-The purpose of a Seed Node is to establish *how* we think together, not *what* to think.
+We attempt to define a minimal protocol for detecting and stabilizing shared constraint surfaces across divergent nodes.
+
+The purpose of a Seed Node is to establish *how* we think together.
 
 ---
 
 ## What This Is
+
 This system operates explicitly within the **epistemic domain** and requires voluntary structural participation.  It does not govern physical reality, enforce moral alignment, or claim universal authority.  It functions only where its protocol is consciously included.
 
 - A minimal set of principles governing participation
@@ -46,6 +48,17 @@ When starting a project, research effort, or collaborative inquiry:
 That is the only requirement.
 
 Disagreement, divergence, and exit are expected outcomes.
+
+---
+
+## Governance
+Procedural mechanics are located in [governance](./governance/README.md).
+
+---
+
+## Propositions
+
+**Propositions** are core terms and structural claims, they live in [propositions](./propositions/README.md).
 
 ---
 

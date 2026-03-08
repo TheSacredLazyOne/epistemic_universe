@@ -6,8 +6,6 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 
-PARENT_NAME = "epistemic_seed"
-
 
 def _files_in(dir_rel: str) -> List[Path]:
     d = ROOT / dir_rel
@@ -62,7 +60,8 @@ def artifact_dir() -> str:
 
 
 def artifact_basename(mode: str) -> str:
-    return f"{_safe_slug(node_name())}_frame_{mode}"
+    # Single underscore separator (no double __)
+    return f"{_safe_slug(node_name())}_{mode}"
 
 
 def repository_url() -> str | None:
@@ -74,10 +73,17 @@ def repository_url() -> str | None:
         repo = data.get("repository")
         return str(repo).strip() if isinstance(repo, str) and repo.strip() else None
     except Exception:
-        return None
+        pass
+
+    # Fallback — structural default
+    return 'https://github.com/TheSacredLazyOne/epistemic_seed'
 
 
 def license_name() -> str:
+    """
+    Returns declared license from seed_node.json.
+    Falls back to CC-BY-SA-4.0 if absent.
+    """
     p = ROOT / "seed_node.json"
     if p.exists():
         try:
@@ -87,19 +93,9 @@ def license_name() -> str:
                 return lic.strip()
         except Exception:
             pass
+
+    # Fallback — structural default
     return "CC-BY-SA-4.0"
-
-
-def derived_seed_node_info() -> dict | None:
-    """Returns derived_from block for child nodes to nest."""
-    p = ROOT / "seed_node.json"
-    if not p.exists():
-        return None
-    try:
-        data = json.loads(p.read_text(encoding="utf-8"))
-        return data.get("derived_from", None)
-    except Exception:
-        return None
 
 
 # ---------------------------------------------------------------------------
@@ -109,22 +105,15 @@ def derived_seed_node_info() -> dict | None:
 def build_node_frame() -> List[Path]:
     items: List[Path] = []
 
-    # Identity
+    # Identity first
     items += [ROOT / "seed_node.json"]
 
     # Root docs
-    for name in ["README.md"]:
-        p = ROOT / name
-        if p.exists():
-            items.append(p)
+    items += [ROOT / "README.md", ROOT / "LINEAGE.md", ROOT / "version.md"]
 
-    # This node's own structure
+    # Governance + vocabulary
     items += _files_in("governance")
     items += _files_in("propositions")
-
-    # Inherited structure from parent
-    items += _files_in(f"integrated/{PARENT_NAME}/governance")
-    items += _files_in(f"integrated/{PARENT_NAME}/propositions")
 
     return [p for p in items if p.exists()]
 
@@ -132,19 +121,11 @@ def build_node_frame() -> List[Path]:
 def build_bundle(mode: str) -> List[Path]:
     items = build_node_frame()
 
-    if mode == "integrated":
-        items += _rfiles_in("integrated")
-    elif mode == "derivative":
+    if mode == "derivative":
         items += _rfiles_in("derivative")
-    elif mode == "library":
-        items += _rfiles_in("library")
-    elif mode == "nutrition":
-        items += _rfiles_in("nutrition")
     elif mode == "all":
         items += _rfiles_in("integrated")
         items += _rfiles_in("derivative")
-        items += _rfiles_in("library")
-        items += _rfiles_in("nutrition")
     elif mode != "none":
         raise ValueError(f"Unknown bundle mode: {mode}")
 

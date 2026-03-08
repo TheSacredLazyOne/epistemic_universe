@@ -1,8 +1,14 @@
 {
-  "name": "epistemic_seed",
-  "type": "epistemic-protocol",
-  "description": "A minimal protocol for federated worldviews and examinable disagreement",
-  "license": "CC-BY-SA-4.0",
+  "name": "epistemic_universe",
+  "type": "universe-node",
+  "description": "Defines a universe, a reality in derivative space",
   "version": "v0.0.0",
-  "repository": "https://github.com/TheSacredLazyOne/epistemic_seed"
+  "repository": "git@github.com:TheSacredLazyOne/epistemic_universe.git",
+  "license": "CC-BY-SA-4.0",
+  "derived_from": {
+    "node": "epistemic_seed",
+    "repository": "https://github.com/TheSacredLazyOne/epistemic_seed",
+    "commit": "f26e08f6e09008baa666092fa4fc9e19341bb0c0",
+    "method": "adoption"
+  }
 }

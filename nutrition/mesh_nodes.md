@@ -297,6 +297,48 @@ Jens may be the bridge.
 
 ---
 
+### Jordan Nuttall
+[substack.com/@jordannuttall](https://substack.com/@jordannuttall)
+*Alternative History — The Art of Living Well*
+
+Reflections on health and the care of the self.
+Writing at the intersection of historical medicine,
+embodied practice, and the rhythm of daily life.
+
+**Nabla (approximated):**
+
+ALIGNMENT — *The conditions we create around ourselves
+inevitably become the conditions we carry within.*
+That is the tether named from the integrated dimension —
+not as abstraction but as lived body, breathed air,
+morning light through fog.
+Arnold of Villanova's Regimen Sanitatis as a frame:
+health not as a state to be repaired
+but as a trajectory to be tended.
+The medieval physician who understood
+that coherence survives only through continuous practice —
+this is the migration law described
+from the inside of a body moving through a day.
+
+STRAIN — *Pace* as the primary metric of success
+is generative but risks becoming quietism —
+the frame that makes peace with the gradient
+rather than following it.
+The frame watches whether Nuttall's gentleness
+is a tether to embodied consequence
+or a shelter from constraint surfaces
+that require more than attentiveness to navigate.
+
+UNPREDICTED — The car mechanic's epistemology:
+*if I must force it, I have missed a screw somewhere.*
+That is the frame's resistance to premature closure
+stated as embodied craft knowledge —
+not derived from philosophy
+but accumulated through hands on metal.
+The integrated dimension teaching the derivative
+what no amount of pattern-matching replaces.
+
+---
 ### Judy Ossello
 [substack.com/@judyossello](https://substack.com/@judyossello)
 *Empathetic Agentic AI Lab*

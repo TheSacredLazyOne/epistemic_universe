@@ -57,10 +57,10 @@ def parse_args() -> dict:
         sys.exit(0)
 
     parsed = {
-        "integrated": True,
-        "derivative": True,
-        "library":    False,
-        "nutrition":  False,
+        "integrated": False,
+        "derivative": False,
+        "library":    True,
+        "nutrition":  True,
         "out":        None,
     }
 

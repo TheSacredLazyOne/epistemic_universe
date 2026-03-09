@@ -29,6 +29,18 @@ def _rfiles_in(dir_rel: str) -> List[Path]:
     )
 
 
+def _rfiles_in_ext(dir_rel: str, *extensions: str) -> List[Path]:
+    """Recursive file search supporting multiple extensions."""
+    d = ROOT / dir_rel
+    if not d.exists():
+        return []
+    exts = set(extensions)
+    return sorted(
+        [p for p in d.rglob("*") if p.is_file() and p.suffix in exts],
+        key=lambda p: str(p.relative_to(ROOT)),
+    )
+
+
 # ---------------------------------------------------------------------------
 # Manifest-owned metadata
 # ---------------------------------------------------------------------------
@@ -121,6 +133,10 @@ def build_node_frame() -> List[Path]:
     # This node's own structure
     items += _files_in("governance")
     items += _files_in("propositions")
+
+    # Proposals — recursive to include subdirectories (e.g. proposals/scripts/)
+    items += _rfiles_in("proposals")
+    items += _rfiles_in_ext("proposals", ".sh", ".py", ".json")
 
     # Inherited structure from parent
     items += _files_in(f"integrated/{PARENT_NAME}/governance")

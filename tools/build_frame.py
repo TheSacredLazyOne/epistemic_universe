@@ -19,11 +19,11 @@ USAGE = dedent("""\
     Directory flags (presence/absence controls inclusion):
         --integrated    include integrated/ (default: on)
         --no-integrated exclude integrated/
-        --derivative    include derivative/ (default: on)
+        --derivative    include derivative/ (default: off)
         --no-derivative exclude derivative/
-        --library       include library/    (default: off)
+        --library       include library/    (default: on)
         --no-library    exclude library/
-        --nutrition     include nutrition/  (default: off)
+        --nutrition     include nutrition/  (default: on)
         --no-nutrition  exclude nutrition/
 
     Other:
@@ -32,21 +32,21 @@ USAGE = dedent("""\
 
     Examples:
         python tools/build_frame.py
-            -> frame + integrated + derivative (default)
+            -> frame + integrated + library + nutrition (default)
 
-        python tools/build_frame.py --library --nutrition
+        python tools/build_frame.py --derivative
             -> frame + integrated + derivative + library + nutrition
 
-        python tools/build_frame.py --no-integrated --no-derivative
+        python tools/build_frame.py --no-integrated --no-library --no-nutrition
             -> frame only
 
-        python tools/build_frame.py --no-integrated --no-derivative --nutrition
+        python tools/build_frame.py --no-integrated --no-library --nutrition
             -> frame + nutrition only
 """)
 
 
 # ---------------------------------------------------------------------------
-# Argument parsing — graceful, no argparse crash
+# Argument parsing
 # ---------------------------------------------------------------------------
 
 def parse_args() -> dict:
@@ -57,7 +57,7 @@ def parse_args() -> dict:
         sys.exit(0)
 
     parsed = {
-        "integrated": False,
+        "integrated": True,
         "derivative": False,
         "library":    True,
         "nutrition":  True,
@@ -203,31 +203,8 @@ def main() -> None:
     args = parse_args()
     mod = load_manifest_module()
 
-    # Build file list from manifest then filter by flags
-    files: List[Path] = mod.build_node_frame()
-
-    def add(dir_rel: str) -> List[Path]:
-        d = ROOT / dir_rel
-        if not d.exists():
-            return []
-        return sorted(
-            [p for p in d.rglob("*.md") if p.is_file()],
-            key=lambda p: str(p.relative_to(ROOT)),
-        )
-
-    if args["integrated"]:  files += add("integrated")
-    if args["derivative"]:  files += add("derivative")
-    if args["library"]:     files += add("library")
-    if args["nutrition"]:   files += add("nutrition")
-
-    # Deduplicate
-    seen = set()
-    out_files: List[Path] = []
-    for p in files:
-        rp = p.resolve()
-        if rp not in seen:
-            seen.add(rp)
-            out_files.append(p)
+    # Manifest owns the logic. Script owns the flags. Neither duplicates the other.
+    out_files: List[Path] = mod.build_bundle(args)
 
     label = bundle_label(args)
     default_out = f"{mod.artifact_dir()}/{mod.artifact_basename(label)}.md"

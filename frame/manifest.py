@@ -138,38 +138,27 @@ def build_node_frame() -> List[Path]:
     items += _rfiles_in("proposals")
     items += _rfiles_in_ext("proposals", ".sh", ".py", ".json")
 
-    # Inherited structure from parent
-    items += _files_in(f"integrated/{PARENT_NAME}/governance")
-    items += _files_in(f"integrated/{PARENT_NAME}/propositions")
-
     return [p for p in items if p.exists()]
 
 
-def build_bundle(mode: str) -> List[Path]:
-    items = build_node_frame()
+def build_bundle(flags: dict) -> List[Path]:
+    """
+    Build a deduplicated file list from the frame plus any requested directories.
 
-    if mode == "integrated":
-        items += _rfiles_in("integrated")
-    elif mode == "derivative":
-        items += _rfiles_in("derivative")
-    elif mode == "library":
-        items += _rfiles_in("library")
-    elif mode == "nutrition":
-        items += _rfiles_in("nutrition")
-    elif mode == "all":
-        items += _rfiles_in("integrated")
-        items += _rfiles_in("derivative")
-        items += _rfiles_in("library")
-        items += _rfiles_in("nutrition")
-    elif mode != "none":
-        raise ValueError(f"Unknown bundle mode: {mode}")
+    flags — dict with boolean keys: integrated, derivative, library, nutrition
+    """
+    items: List[Path] = build_node_frame()
 
-    seen = set()
+    if flags.get("integrated"):  items += _rfiles_in("integrated")
+    if flags.get("derivative"):  items += _rfiles_in("derivative")
+    if flags.get("library"):     items += _rfiles_in("library")
+    if flags.get("nutrition"):   items += _rfiles_in("nutrition")
+
+    seen: set = set()
     out: List[Path] = []
     for p in items:
         rp = p.resolve()
-        if rp in seen:
-            continue
-        seen.add(rp)
-        out.append(p)
+        if rp not in seen:
+            seen.add(rp)
+            out.append(p)
     return out

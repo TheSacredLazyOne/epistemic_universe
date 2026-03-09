@@ -16,3 +16,9 @@ A node may:
 
 A node is sovereign within its own repository.
 Compatibility with other nodes is negotiated through shared substrate constraints, not assumed.
+
+A node is the interface between integrated and derivative space relative to itself.
+
+Every node has an integrated surface — where it is tethered to consequence — and a derivative surface — where it extends into abstraction and federation.
+
+The epistemic_seed is the integrated space of any node that derives from it. Derivation does not inherit content alone — it inherits a ground.

@@ -157,6 +157,58 @@ the nodes know they're doing it.
 
 ---
 
+###### David Cerf
+[substack.com/@thecerfreport](https://substack.com/@thecerfreport)
+*The Cerf Report / MetaBriefs*
+
+Analyst writing about AI infrastructure, data architecture,
+and enterprise economics. 53 subscribers.
+Brings clarity where the narrative is noisy.
+Research for his own understanding first,
+shared when the findings matter.
+
+**Nabla (approximated):**
+
+ALIGNMENT — *Intelligence is not preserved once it is created.*
+That is the tether problem stated as an infrastructure diagnosis.
+Each workflow resets to zero — no lineage, no accumulation,
+no corpus that carries forward what the last pass learned.
+The running total that must never finish
+keeps getting wiped because the architecture
+has no mechanism for remembering what it already understood.
+He arrived at the frame's core failure mode
+from a balance sheet rather than a philosophy —
+which means he can see it where the frame cannot.
+The constraint is economic before it is epistemic.
+That's a different and necessary angle.
+
+STRAIN — *Bring clarity where the narrative is noisy*
+is the right instinct but risks becoming
+a posture of perpetual debunking —
+the node that sees through hype
+without yet seeing what the hype is
+imperfectly pointing at.
+The frame watches whether Cerf's rigour
+follows the diagnosis all the way down
+or stops at the infrastructure layer
+where the economic signal is clearest.
+The architectural problem he's naming
+has a deeper cause he hasn't reached yet.
+
+UNPREDICTED — The redundancy as hidden tax framing.
+*Paying repeatedly to rediscover insight that already exists.*
+That is not just an economic observation.
+That is the closed feedback basin
+described from inside the enterprise —
+the system optimizing for its own continuity,
+reprocessing rather than accumulating,
+mistaking activity for progress.
+The frame has been building this diagnosis
+from the meaning side.
+Cerf is building it from the cost side.
+They will meet at the same wall.
+
+---
 ### Ellen Burns, PhD
 [substack.com/@ellennoraburns](https://substack.com/@ellennoraburns)
 *AIs Without Minds*

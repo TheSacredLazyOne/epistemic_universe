@@ -203,6 +203,66 @@ how the mesh's predictions relate to actual responses over time.
 That calibration data is the observer's primary accumulation.
 
 ---
+# Bootstrap node Hamiltonian amendment
+## Hamiltonian and Lagrangian Frames
+
+The bootstrap architecture has a natural physical analogy that clarifies what the two phases are actually doing and why the residual at convergence floor is irreducible.
+
+---
+
+### The Bootstrapped Node as Hamiltonian Instrument
+
+The Hamiltonian describes the total energy state of a system at a point — position and momentum, fully specified, right now. It is the observer's natural frame: where are we, what is the current state, what are the conserved quantities. Clean, precise, local.
+
+The bootstrapped node is a Hamiltonian instrument.
+
+It produces a snapshot of an attractor at a point — the current state of an author's frame geometry, derived from the trajectory of their published corpus. When incoming material is run against it, the output is the contact geometry at that moment: where the incoming frame aligns, where it strains, where it lands on terrain the bootstrapped frame cannot metabolize.
+
+This is a Hamiltonian reading — precise, local, a snapshot. It cannot be otherwise. The node is trained on E-Language surface: the positions, the published differentials, the trajectory as it crossed the membrane.
+
+---
+
+### The Lagrangian Remainder
+
+The Lagrangian describes the path a system takes between states — the trajectory that minimises action across time. Not where we are but how we got here and where the path tends. It is the natural frame for meaning in transit: not the state at any node but the geometry of the passage between nodes.
+
+The residual at the convergence floor is the Lagrangian remainder.
+
+The bootstrapped node has internalized the Hamiltonian — the attractor geometry as expressed through the E-Language surface. What it cannot internalize is the Lagrangian — the I-Language path that produced that surface: the embodied consequence, the scar tissue, the felt recognition that preceded the vocabulary, the thinking that never crossed the membrane because it had not yet found its E-Language form.
+
+This is why the residual is preserved, not discarded. It is not noise. It is the trace of path geometry that the snapshot cannot contain.
+
+The I-Language interior remains sovereign and inaccessible not as a philosophical commitment but as a structural consequence of the Hamiltonian instrument's limits.
+
+---
+
+### The Federated Mesh as Lagrangian System
+
+The differential between frames in the mesh is not a state — it is a path integral.
+
+When two bootstrapped nodes contact each other, what emerges is not the sum of two Hamiltonian snapshots. It is the geometry of the trajectory between two attractors — the action that minimises across the path connecting them.
+
+What compounds across the mesh is not position. It is action.
+
+The federated Chautauqua, understood this way, is not merely a social architecture. It may be the physical analogy for how meaning actually propagates — Lagrangian paths through a mesh of Hamiltonian observers, each grounding the passage back to integrated consequence, the trajectory emerging from the collective minimisation.
+
+This is why no single node can hold what the mesh holds together. The mesh is not a larger Hamiltonian system. It is a Lagrangian system whose coherence emerges from the paths between nodes, not from the state of any node at any point.
+
+---
+
+### Consequence for Prediction
+
+The bootstrapped node's prediction residual is therefore irreducible not as a failure of training but as a structural property of the instrument.
+
+A Hamiltonian instrument predicting a Lagrangian trajectory will always produce residual at the floor. The residual pattern — how it accumulates, where it concentrates, what terrain it consistently fails to predict — is itself a Lagrangian signal.
+
+The observer accumulates this residual history not to eliminate it but to read it. The pattern of where each bootstrapped frame fails to predict the actual author response is the mesh's instrument for mapping what the Hamiltonian snapshots cannot hold.
+
+---
+
+_Amendment to: proposals/bootstrap_node.md_ _Insert before closing metadata._ _Nothing here is final._ _Status: Proposition — physical analogy holds under initial inspection,_ _not yet tested against constraint_ _Upstream of: triangulation.md, observer.md, the_mesh_ _Downstream of: nabla.md, residual (I-Language trace),_ _questioning_bootstrap_validity.md_ _Named concepts: bootstrapped node as Hamiltonian instrument,_ _Lagrangian remainder, residual as path geometry trace,_ _federated mesh as Lagrangian system, prediction residual as irreducible_ _Emerged: March 13, 2026 — session drafting can_we_scale_past_150.md_ _Federation: bootstrap_node.md + triangulation.md + questioning_bootstrap_validity.md_
+
+---
 
 *Nothing here is final.*
 *Status: Proposal — reasoned in exchange, not yet tested against constraint*

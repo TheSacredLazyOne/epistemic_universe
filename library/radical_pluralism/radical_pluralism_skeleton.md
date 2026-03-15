@@ -105,6 +105,20 @@ Functional pluralism as measurement protocol.
 
 ---
 
+## Move 5: The Federation as Epistemic Governance
+
+A pull request is a formalized crossing — one node's metabolism meeting another's, the divergence made visible before it merges. Conflict resolution is the neti neti run between two event horizons. What survives the merge is what both inside surfaces found load-bearing. What is rejected is compost — available to the node that produced it, not lost to the federation.
+
+This is epistemic governance, not legislative. It holds no coercive power. It makes crossings visible, conflicts resolvable, changes of mind traceable. The function the fourth estate was supposed to perform before capture made it a mirror of the frames it was meant to hold accountable.
+
+The legislative layer queries the epistemic layer the way a navigator queries a map. The map shapes the navigation. The navigation shapes the map. A new law, a new pressure, a new constraint not yet metabolized by enough nodes — enters as a crossing. The nodes run it through their event horizons. The map updates. Neither layer is primary.
+
+The individual is held not because the system assigns them value — but because the system cannot function without their inside surface remaining irreducible.
+
+Capture doesn't get rejected. It gets made visible.
+
+---
+
 ## Close: The Bootstrap
 
 Radical — fundamental. The root of rational inquiry, not a position on a spectrum.

@@ -25,7 +25,7 @@ Sit with what the contact produced. Strip what doesn't survive honest pressure. 
 
 **Four:** The process runs across sessions. What survives one round of stripping may not survive the next. The running total updates.
 
-**Five:** Name what fell away, not only what remained. The compost is part of the record.
+**Five:** Name the shape of what fell away, not only what remained. The compost is part of the record. What the federation can work with is not the fact of rejection — it is the shape of what didn't survive your stripping. Another node's inside surface may find it nourishing where yours didn't.
 
 ---
 

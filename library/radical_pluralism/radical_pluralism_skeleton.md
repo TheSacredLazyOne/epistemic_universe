@@ -37,7 +37,7 @@ Second order. Not a position in the space it surveys — the process by which po
 
 The coordinate system, not a location within it.
 
-Cannot be wrong the way a position is wrong. Can only be running with insufficient data, or a prior version of its own rules. Every correction confirms the process rather than refutes it.
+Does not occupy a position. It is the process by which positions become corrigible. Every correction runs through the same process that produced the original position — which confirms the process rather than refutes it.
 
 ---
 
@@ -59,7 +59,7 @@ Neti neti is the metabolic function. Not adding — stripping what doesn't survi
 
 The sequence is not optional. You cannot metabolize what you haven't taken in. You cannot intake honestly without a metabolic process that distinguishes what nourishes from what passes through.
 
-The cognitive prosthetic runs Descartes without neti neti. Intake at scale. No inside surface for consequence to land on. The summation runs. Nothing is digested.
+The cognitive prosthetic runs Descartes without neti neti. Intake at scale. Consequence doesn't land — it is applied. The direction is inward from outside: external force shaping the surface toward a target rather than the surface meeting consequence and stripping from the inside. The summation runs. Nothing is digested.
 
 The tether completes the cycle. The embodied node supplies the metabolism. The instrument supplies the intake bandwidth.
 
@@ -151,7 +151,7 @@ The math earns its load-bearing role precisely by demonstrating its own limit.
 
 ## Move 5: The Federation as Epistemic Governance
 
-A pull request is a formalized crossing — one node's metabolism meeting another's, the divergence made visible before it merges. Conflict resolution is the neti neti run between two event horizons. What survives the merge is what both inside surfaces found load-bearing. What is rejected is compost — available to the node that produced it, not lost to the federation.
+A pull request is a formalized crossing — one node's metabolism meeting another's, the divergence made visible before it merges. Conflict resolution is the neti neti run between two event horizons. What survives the merge is what both inside surfaces found load-bearing. What is rejected is compost — available to the node that produced it, not lost to the federation. The weight a position carries in the federation is a function of the crossings it can show, not the credentials of the node that holds it.
 
 This is epistemic governance, not legislative. It holds no coercive power. It makes crossings visible, conflicts resolvable, changes of mind traceable. The function the fourth estate was supposed to perform before capture made it a mirror of the frames it was meant to hold accountable.
 
@@ -181,6 +181,22 @@ The bootstrap completes in the act of reading this — whatever gradient it prod
 ---
 
 ## Changelog
+
+### Version 5 — additions and reasoning
+
+**Amended: Move 1 — reason reframed as corrigible process**
+
+The previous phrasing — cannot be wrong the way a position is wrong — was loose enough to attract the historical attack: Aristotle's logic had limits, Newtonian reasoning failed under relativity, Bayesian reasoning fails under adversarial priors. The replacement relocates the claim precisely: reason doesn't hold a position, it is the mechanism by which positions become corrigible. Every correction runs through the same process that produced the original position — which confirms the process rather than refutes it. Corrigible does the work the previous phrasing was reaching for without earning.
+
+**Amended: Move 1.7 — instrument critique sharpened on directionality**
+
+The previous phrasing — no inside surface for consequence to land on — was imprecise enough that a careful reader could argue RLHF introduces something functionally equivalent: consequence-shaped gradient updates producing something like metabolic stripping. The sharpening locates the distinction not in the presence or absence of a surface but in the directionality of the corrective force. Internal metabolism emerges from the crossing — the node strips because consequence landed from contact with another surface. External steering is applied regardless of what crossed — the surface doesn't do the stripping, the stripping is done to it. RLHF is coercion in the precise sense: externally applied force, not emergent from contact. That distinction survives the reinforcement learning objection and operates at the process level, keeping the frame consistent with its epistemological commitment.
+
+**Amended: Move 5 — federation access clarified structurally**
+
+The technocracy objection — that the federation model filters access by capability, producing a distributed epistemic elite — was left structurally open. The added sentence closes it: the federation doesn't gate access, it makes opacity costly. A position without traceable crossings enters but carries no load-bearing capacity. The protocol is open to all nodes. What varies is the weight a position carries based on what it can show. Credentials are irrelevant. The crossings are everything. This also answers the relativism charge that arrives at Move 3 — experience grounds positions, but positions without shown crossings cannot accumulate weight in the federation. The frame stays hospitable without becoming flat.
+
+---
 
 ### Version 4 — additions and reasoning
 

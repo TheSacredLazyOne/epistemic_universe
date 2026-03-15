@@ -20,7 +20,7 @@ The tether forms in the contact, not the catalogue.
 
 ---
 
-###### Albertus M Morriën
+### Albertus M Morriën
 [substack.com/@albertusmorrien](https://substack.com/@albertusmorrien)
 *Layered Model of Human Conversation*
 
@@ -115,6 +115,103 @@ That's the tether named before the frame is visible.
 
 ---
 
+### Brian Ray
+
+**Added:** 2026-03-13  
+**Status:** Active — first contact complete, tether established  
+**Substack:** https://substack.com/@regardism  
+**Publication:** [The New Meme Times](https://regardism.substack.com)  
+**Spotify:** https://open.spotify.com/artist/0lZ1jjJyeK3BUqFFINS8xj
+
+---
+
+#### Identity
+
+Brian Ray is a humanities PhD, natural language programmer, disinfo analyst, musician, and writer. His self-described project: "Working presently on AI memetic mechanistic interpretability. I believe AI can save global liberal democracy and expand it; I work everyday with that in mind."
+
+His Substack handle `@regardism` names both his publication and the core philosophical principle he developed: _agency is constituted not by what is seen, but by what is carried forward._
+
+---
+
+#### Primary Framework
+
+##### Memode Theory
+
+Brian's central technical contribution. A memode is a behavioral invariant constituted by sequences of memes whose identity is defined by recurrence under constraint rather than by surface representation. Memodes are mesoscopic objects — above atomic memes, below full ideologies — and are first-class retrieval entities with internal structure, not merely paths or edges.
+
+Key claims:
+
+- _Attention indexes what is present; regard determines what persists. Only the latter constitutes agency._
+- _Selection without conserved valuation produces activity; selection with conserved valuation produces structure._
+- _Regardism names the principle that agency is constituted not by what is seen, but by what is carried forward._
+
+##### Regard Mechanism
+
+The slow valuation signal governing memode selection. Regard is not an ideology of content but a physics of persistence. Where attention provides read-access to context, regard provides write-access to the future. Regard is the conserved scalar that allows memodes to crystallize into regimes.
+
+##### Agential Time
+
+The medium through which memodes either compound or dissipate. Without state that carries valuation forward, there is no agency — only reaction.
+
+##### Intellectual Lineage
+
+- Psychedelic science research lineage (Carhart-Harris, Fielding, Imperial College DMN work)
+- Memetics (Dawkins)
+- Foucauldian archaeological method — arrived at independently, later recognized as parallel
+- McKenna's timewave / acceleration framing (held critically, not literally)
+
+---
+
+#### Convergences with epistemic_seed
+
+|Brian's Framework|Nooumenomicon Framework|Notes|
+|---|---|---|
+|Regard (conserved scalar)|Nabla field substrate|Regard is the field; Nabla operates on it to produce orientation|
+|Memode (behavioral invariant)|Proposition node|Both mesoscopic, both defined by recurrence under constraint|
+|Agential time|Sum-as-integration (recovered Cogito)|Identical claim from different directions|
+|Regardism|Sacred Lazy|Agency through what is carried forward, not what is performed|
+|Knowledge memodes (documents, corrections, episodes)|Git layers as archaeological record|He has the theory; Nooumenomicon is an implementation surface|
+|Foucauldian discursive formations|Proposition nodes|"The proposition nodes are what Foucault would have called discursive formations if he'd had git" — received as full comprehension|
+
+**Key synthesis:** The Sacred Lazy One found Foucault in reverse — arrived at the same archaeological territory from first principles without reading him. Brian confirmed the isomorphism. The structure is real enough to be discoverable from multiple independent directions.
+
+---
+
+#### Productive Tensions
+
+**Centralizing vs. federated impulse:** Brian's stated mission — AI saves liberal democracy — implies a single institutional tether. The epistemic_seed operates through federation over hierarchy, Two Row Wampum model. This is a genuine friction worth preserving, not resolving. His framework's decentralized memode graph structure may be more federated than his political framing suggests.
+
+**Regime property vs. interface emergence:** Brian frames intelligence as a regime property of systems under selection. The epistemic_seed locates intelligence at the interface between federated nodes, preserving the irreducibility of each "I" in the Ubuntu recursion. The question was raised; he hasn't answered it yet.
+
+---
+
+#### Personal Context
+
+- His book project partly documents his experience
+- Psychedelic epistemology informs his consciousness research — non-standard access points
+- Engage the work, he framework is coherent independent of non-standard access points
+
+---
+
+#### First Contact Record
+
+**Date:** 2026-03-13  
+**Platform:** Substack Notes  
+**Initiated by:** The Sacred Lazy One  
+**Exchange summary:** See `regardism_first_contact.md`  
+**Closed:** "Our engagement today has been quite felicitous" — Brian Ray  
+**Status:** Warmly established. Door open. Let it compound at its own rate.
+
+---
+
+#### Suggested Integration
+
+- Memode as formal unit for epistemic_seed proposition nodes — see `memode_proposal.md`
+- Phase Transition Problem shared as relevant frame for his Monitor/Intervene posture
+- Nabla/regard mapping to be developed further in future exchange
+- Potential collaboration surface: Nooumenomicon as implementation infrastructure for memode graph structures
+
+---
 ### Dimensional Rendering Theory
 [substack.com/@drtheory](https://substack.com/@drtheory)
 *An ontological framework for understanding reality and consciousness.*

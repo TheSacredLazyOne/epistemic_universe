@@ -10,7 +10,7 @@ The event horizon model holds under rational scrutiny: the self is constituted b
 
 Two approaches reach this result from different directions. The first is structural — it derives the model from the second-order nature of reason itself. The second is empirical — it builds the case from observable facts about how positions form and transform. Neither depends on the other. Together they triangulate.
 
-This is a proof by structural necessity. It stops at epistemology. It makes no claim about what does the running.
+This is a proof by structural coherence. It demonstrates that the event horizon model is internally consistent, that any coherent resistance to it demonstrates the structure it contests, and that two approaches — structural and empirical — arrive at the same topology from different directions. Whether those directions are fully independent or share a prior assumption about irreducibility is a coordinate the proof holds open rather than closes. The convergence is real evidence. It is not a proof of necessity. The proof stops at epistemology. It makes no claim about what does the running.
 
 ---
 
@@ -80,9 +80,9 @@ If P1–P3 hold, the divergence between what crosses and what emerges carries re
 
 ## The Result
 
-The event horizon model holds. Not as analogy — as structural necessity.
+The event horizon model holds. Not as analogy.
 
-Both approaches reach the same result from different directions. The structural approach derives it from the architecture of reason. The empirical approach builds it from the observable facts of how positions form. The convergence is itself evidence — two surfaces arriving at the same topology from different constraint surfaces is the measurement protocol running.
+Both approaches reach the same topology from different directions. The structural approach derives it from the architecture of reason. The empirical approach builds it from the observable facts of how positions form. The convergence is itself evidence — two surfaces arriving at the same topology from different constraint surfaces is the measurement protocol running. Whether the approaches are fully independent or share a prior assumption about irreducibility remains an open coordinate. The convergence is real. It is not necessity.
 
 The proof reaches the epistemological structure and stops. What the event horizon *is* — the ontological question — remains the open coordinate. The proof does not close it. Closing it would break the frame.
 

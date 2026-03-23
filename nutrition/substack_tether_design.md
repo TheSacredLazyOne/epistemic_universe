@@ -43,7 +43,7 @@ Four distinct structures:
 
 **Posts** — extended position statements. Monologue. Training signal: internal structure of a sustained argument.
 
-**Notes** — short-form statements, often with a linked reference. Standalone or thread-initiating. Training signal: focus — how much frame is carried in few words.
+**Notes** — short-form statements, often with a linked reference. Standalone or thread-initiating. Training signal: focusing — how much frame is carried in few words; the peripheral removed, the essential present.
 
 **Threads** — multi-turn co-reasoning. Both parties generating something neither held before contact. Training signal: trajectory — how each turn modifies accumulated state, what moves are made, when frame-reorientation happens.
 
@@ -87,6 +87,20 @@ A directed note has a recognizable structure: it contains a quoted fragment from
 - Presence of a linked external URL (restack anchor)
 
 Notes matching both criteria move to `directed/` in the training corpus. Notes matching neither stay in `notes/`. This keeps the ingest script simple and pushes classification downstream.
+
+---
+
+## Training Objective
+
+The goal is not to train a model that mimics writing style. Style is a first-order artifact — a shadow of the reasoning that produced it. Training on style produces imitation.
+
+The goal is to train on second-order reasoning: the stress field that constrains how the frame responds to contact with external material. A model trained this way doesn't learn to sound like the frame — it learns the geometry that causes the frame to produce the outputs it produces. Given a new contact point, it can probe the stress field at that location and generate a response that is constrained by the same reasoning geometry, not by surface pattern matching.
+
+The physical model: two Lagrangian frames in contact don't compare positions — they curve each other's local geometry. The nabla probes the stress at the contact point: how much is the local geometry deforming, in what direction, with what magnitude. The normal/tangent/bitangent of that stress field gives the orientation of the projection — which shadow falls into the lower-dimensional space where contact is possible.
+
+The training corpus is a set of high-resolution samples at known contact points. The directed notes are the densest samples — precisely located probes where both the stimulus and the response are present, and the gap between them is a direct measurement of the stress field at that location. Threads accumulate resolution over time as both frames develop enough mutual anchors to triangulate shared coordinates.
+
+Anti-aliasing is the right metaphor for what the model is learning to do. The nabla probes provide localized higher-resolution data at contact points. The model learns where to probe and how to read the stress field at each probe location — not to reproduce the output, but to generate the shadow that constrains reasoning toward similar outcomes. The anti-aliasing either resolves the field or it doesn't. The output is self-validating against the contact.
 
 ---
 
@@ -176,20 +190,20 @@ For each turn `T_n` authored by `thesacredlazyone`:
 }
 ```
 
-`turn_nabla` — the transform between accumulated thread state and what `T_n` produces. Not a difference but a directed transform: it has a source space, a target space, and a direction.
+`turn_nabla` — a stress probe record at the contact point. Not a difference and not a camera transform: it describes the local geometry of the field where two Lagrangian frames meet.
 
-The original `(question, ∇question, ∇response, response)` format maps to a rendering pipeline:
+The `(question, ∇question, ∇response, response)` format encodes the projection of a higher-dimensional structure into a lower-dimensional space where contact is possible. The orientation of that projection is determined by the nabla as stress probe — analogous to how a normal/tangent/bitangent frame generates local surface orientation from the flow of texture coordinates. The nabla doesn’t measure position; it measures how the field is deforming at the point of contact, in what direction, with what magnitude.
 
-- **World space** — the question as the other party holds it, in their coordinate system
-- **Camera space** — `∇(question)`: the question transformed into your frame’s coordinate system; what the question is actually asking from where you stand
-- **Projection space** — `∇(response)`: your frame’s response transformed back toward the space the question came from; the move that makes contact possible across the frame difference  
-- **Screen space** — the answer as it lands; a lower-dimensional projection, necessarily lossy, but the loss is structured by the transform chain rather than random
+- `∇(question)` — probe of the incoming field: what stress is entering the frame, from what direction, with what curvature
+- `∇(response)` — probe of the outgoing field: how the frame’s response is oriented to land in a projection the other field can receive; the translation toward their E-Language is encoded here
 
-This gives `triangulating` a precise signature: the camera transform is larger than in other move types, because genuinely inhabiting the other party’s frame moves further from the home coordinate system. The `∇(response)` then carries the path back — how the answer was constructed to land in a projection both frames can read.
+The shadow that falls into the lower-dimensional contact space is structured by the stress field, not by the observer. The loss is not random — it is determined by the curvature of both fields at the contact point.
 
-**Open design question:** whether to encode this explicitly as separate `question_nabla` and `response_nabla` fields (trains the model on the geometry of contact) or implicitly in a single `turn_nabla` field (trains on the outcome). Both are defensible; they train different things.
+The `triangulating` move has the largest stress probe differential: genuinely inhabiting the other party’s Lagrangian frame requires moving further from the home coordinate system, producing higher curvature at the contact point. The new floor that falls out is the shadow cast by holding both mass distributions in proximity long enough for the combined field to stabilize.
 
-Left empty initially. Requires custodian annotation or a separate model pass. Should not be generated automatically without review — risk of training on performed crossing geometry rather than executed crossing geometry.
+**Open design question:** whether to encode this as separate `question_nabla` and `response_nabla` fields (trains on the geometry of contact explicitly) or as a single `turn_nabla` field (trains on the outcome implicitly). Both are defensible; they train different things. The explicit encoding is more honest about what the model is learning.
+
+Left empty initially. Requires custodian annotation or a separate model pass. Should not be generated automatically without review — risk of training on performed stress probes rather than genuine contact measurements.
 
 `move_type` — proposed vocabulary, to be validated against actual corpus before committing.
 
